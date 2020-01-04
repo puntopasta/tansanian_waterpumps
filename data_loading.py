@@ -138,6 +138,14 @@ def to_categorical(y, num_classes=None):
     categorical[np.arange(n), y] = 1
     return categorical
 
+def categorical_encoding(data):
+        for feature in data.columns:
+            if data[feature].dtype == 'O':
+                le = preprocessing.LabelEncoder()
+                le.fit(data[feature])
+                num = le.transform(data[feature])
+                data[feature] = num
+        return data
 
 def categorical_factorisation(data, test_datasets):
     '''
