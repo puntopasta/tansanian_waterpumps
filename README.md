@@ -1,5 +1,5 @@
-# tansanian_waterpumps
-exploration and analysis of the tansanian waterpump maintenance dataset
+# Tanzanian water pump functional status dataset
+Exploration and analysis of the Tanzanian waterpump maintenance dataset
 
 # Dependencies
 Python 3.5 with packages:
